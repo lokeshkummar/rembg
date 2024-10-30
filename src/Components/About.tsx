@@ -3,23 +3,23 @@ import Socials from "./Socials";
 
 const About = () => {
   return (
-    <div className="h-screen w-full mb-36 mt-16 text-[#02e797]">
-      <div className="pt-7 flex items-center">
-        <h2 className="text-nowrap font-bold text-xl pl-20 pr-5 text-[#02e797]">
+    <div className="h-screen w-full md:mb-36 mt-16 text-[#02e797]">
+      <div className="md:pt-7 py-4 flex items-center">
+        <h2 className="text-nowrap font-bold text-2xl md:text-xl pl-20 pr-5 text-[#02e797]">
           Front-End Developer
         </h2>
         <div className="h-1 bg-[#02e797] w-full"></div>
       </div>
-      <h1 className="text-[10vw] text-center font-bold -mt-5">Lokesh Kumar</h1>
+      <h1 className="hidden md:block text-[10vw] text-center font-bold -mt-5">Lokesh Kumar</h1>
 
-      <div className="flex justify-center ml-20 mr-10">
+      <div className="md:flex flex-col md:flex-row justify-center md:ml-20 md:mr-10">
         <img
-          className="h-[440px] border-4 border-[#02e797] hover:scale-105 ease-in-out duration-300"
+          className="h-[440px] mx-7 border-4 border-[#02e797] hover:scale-105 ease-in-out duration-300"
           src={photo}
           alt="image"
         />
-        <div>
-          <p className="w-[600px] text-[1.3vw] pt-5 p-10">
+        <div className="mx-7 pb-28 md:pb-0">
+          <p className="md:w-[600px] md:leading-relaxed text-xs md:text-[1.3vw] pt-5 md:p-5">
             Hello! I'm Lokesh Kumar, a passionate{" "}
             <span className="font-bold text-white">Frontend Developer</span> from
             Bulandshahr, Uttar Pradesh, India. With a strong foundation in
@@ -42,7 +42,7 @@ const About = () => {
               Let's create something amazing together!
             </span>
           </p>
-          <div className="absolute right-20 -mt-5">
+          <div className="hidden md:block absolute right-20 -mt-5">
             <Socials />
           </div>
         </div>

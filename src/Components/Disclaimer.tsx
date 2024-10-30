@@ -1,6 +1,6 @@
 const Disclaimer = () => {
   return (
-    <div className="h-screen w-full text-white">
+    <div className="h-screen w-full text-white -mb-60 md:-mb-0">
       <h2 className="text-[#02e797] mt-20 text-center font-bold text-5xl underline">Disclaimer</h2>
      <div className="w-full text-center mt-10 px-5 md:px-96">
      <p className="text-2xl">
