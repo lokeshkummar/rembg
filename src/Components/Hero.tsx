@@ -10,13 +10,13 @@ const Hero = () => {
       <div className="w-full md:w-[55%] h-full pb-10 px-10 md:px-0 flex justify-center">
         <div className="ml-10 text-left md:mx-20 mt-28 md:mt-36 text-white">
           <RiScissorsCutFill size={44} className="rotate-45 -mb-5 -ml-9" />
-          <h3 className="text-5xl md:text-7xl font-extrabold mb-8 md:mb-14 -rotate-3">
+          <h3 className="text-6xl md:text-7xl font-extrabold mb-5 md:mb-14 -rotate-3">
             REMOVE
           </h3>
-          <span className="text-4xl md:text-7xl font-extrabold border-2 border-dashed border-[#02e797] rounded-xl px-2 md:px-3 shadow-lg shadow-[#02e797]">
+          <span className="text-[40px] py-2 md:text-7xl font-extrabold border-2 md:border-dashed border-[#02e797] rounded-xl px-2 md:px-3 shadow-lg shadow-[#02e797]">
             BACKGROUND
           </span>
-          <h3 className="text-4xl md:text-5xl font-extrabold mt-8 md:mt-12 rotate-3">
+          <h3 className="text-5xl md:text-5xl font-extrabold mt-8 md:mt-12 rotate-3">
             FROM
             <span className="border-b-4 ml-2 md:ml-5 border-[#02e797] text-5xl md:text-6xl">
               IMAGE.

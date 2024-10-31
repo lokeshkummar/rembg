@@ -7,7 +7,7 @@ import { IoGlobeOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="-mt-20 md:-mt-0">
+    <footer className="mt-20 md:-mt-0">
       <div className="mx-auto max-w-5xl px-4 py-5 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
           <div className="flex items-center">
@@ -20,12 +20,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-white">
+        <p className="hidden text-sm md:block mx-auto mt-6 max-w-md text-center leading-relaxed text-white">
           Effortlessly remove backgrounds with a single click—fast, free, and
           flawless. Try it now and elevate your images!
         </p>
 
-        <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+        <ul className="mt-10 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
           <li>
             <NavLink
               className={({ isActive }) =>
@@ -79,7 +79,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
+        <ul className="mt-10 flex justify-center gap-6 md:gap-8">
           <li>
             <Link
               to="https://www.linkedin.com/in/lokesh-kummar/"
