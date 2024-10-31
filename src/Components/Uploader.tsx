@@ -8,6 +8,8 @@ const Uploader = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState<string>("");
 
+  const apiKey = import.meta.env.VITE_API_KEY
+
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -16,8 +18,8 @@ const Uploader = () => {
     reader.onloadend = () => {
       if (reader.result) {
         setImage(reader.result.toString());
-        setProcessedImage(""); 
-        setError(""); 
+        setProcessedImage("");
+        setError("");
       }
     };
     reader.readAsDataURL(file);
@@ -43,7 +45,7 @@ const Uploader = () => {
       const response = await fetch("https://api.remove.bg/v1.0/removebg", {
         method: "POST",
         headers: {
-          "X-Api-Key": "xiYnWDtcRaCHFyqNwv1jCsUA",
+          "X-Api-Key": apiKey,
         },
         body: formData,
       });
@@ -87,7 +89,6 @@ const Uploader = () => {
         <h3 className="text-white font-bold text-xl md:text-2xl text-center">
           Upload Your Image Here
         </h3>
-
         <div className="w-full flex flex-col justify-center items-center">
           <label className="text-[#02e797] hover:text-white h-28 w-full md:w-[80%] md:border-dashed border-2 border-[#02e797] rounded-lg flex justify-center items-center cursor-pointer mt-10 hover:border-white transition-colors">
             <input
@@ -111,10 +112,13 @@ const Uploader = () => {
               <span className="absolute -bottom-6 w-full text-center text-white text-sm">
                 Original
               </span>
-              <IoIosArrowDropright size={38} className="text-[#02e797] hidden md:block" />
+              <IoIosArrowDropright
+                size={38}
+                className="text-[#02e797] hidden md:block"
+              />
             </div>
-
           )}
+
           {processedImage && (
             <div className="relative">
               <img
