@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Upload, Download } from "lucide-react";
+import { LuUpload } from "react-icons/lu";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { IoIosArrowDropright } from "react-icons/io";
 
 const Uploader = () => {
@@ -97,7 +98,7 @@ const Uploader = () => {
               onChange={handleImageChange}
               accept="image/*"
             />
-            <Upload className="" size={34} />
+            <LuUpload className="" size={34} />
           </label>
         </div>
 
@@ -155,7 +156,7 @@ const Uploader = () => {
                        hover:bg-[#02e797] hover:text-black hover:border-white
                        ease-linear duration-100 active:scale-95 flex items-center gap-2"
             >
-              <Download size={24} />
+              <MdOutlineFileDownload size={24} />
               Download
             </button>
           )}
