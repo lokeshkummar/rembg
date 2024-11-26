@@ -130,7 +130,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full py-3 bg-[#000000] border-t border-slate-700 text-center">
-        <span className="text-xs text-[#02e797] opacity-50">Copyright &#169;rembg.in | All Rights Reserved. </span>
+        <span className="text-xs text-[#02e797] opacity-50">Designed & Developed by <Link to='https://portfolio-website-ten-pi.vercel.app/' className="hover:underline">Lokesh Kumar</Link> With ❤️</span>
       </div>
     </footer>
   );
