@@ -118,7 +118,7 @@ const Footer = () => {
 
           <li>
             <Link
-              to="https://portfolio-website-ten-pi.vercel.app/"
+              to="https://lokeshkummar.vercel.app/"
               rel="noreferrer"
               target="_blank"
               className="text-[#02e797] ease-linear duration-300 hover:text-[#ffffff]"
